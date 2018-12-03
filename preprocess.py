@@ -4,8 +4,9 @@
 import pandas as pd
 import os
 
+# 处理数据:将下载的dat文件格式转换成csv格式并保存,方便后续读取.
 class Channel:
-    def __init__(self, dataDir):
+    def __init__(self, dataDir='./data/'):
         self.path = dataDir
     
     def _process_user_data(self, file='users.dat'):
